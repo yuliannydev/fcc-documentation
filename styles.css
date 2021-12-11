@@ -1,0 +1,190 @@
+/* * Clases
+* main-doc
+* main-section
+* 
+*/
+
+/* ! BEM Methodology 
+! .block
+! .block__element
+! .block--modifier
+! .element--modifier
+! .block__element--modifier
+! */
+
+/* * Variables */
+:root {
+  --white: #fafbfc;
+  --black: #171f2d;
+  --blue: #087ea4;
+  --blue-light: #e6f7ff;
+  --text-sm: 1.6rem;
+  --text-sm-mobile: 1.8rem;
+  --text-md: 2rem;
+  --text-lg: 2.2rem;
+  --text-xl: 2.4rem;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Quicksand&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+  font-size: var(--text-sm-mobile);
+  margin: 2rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--blue-light);
+  border-bottom: 2px var(--blue) solid;
+}
+span {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  margin: 3.5rem 0 2rem;
+  font-size: 3.5rem;
+  color: var(--blue);
+}
+ul {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  line-height: 3.2rem;
+}
+
+main {
+  margin-top: 24rem;
+}
+.main-section {
+  text-align: justify;
+  line-height: 3rem;
+}
+
+.title-section {
+  padding: 2.4rem 0;
+  text-align: start;
+  color: var(--blue);
+}
+
+p {
+  margin-bottom: 1.6rem;
+}
+
+ol li {
+  margin-left: 2.4rem;
+}
+
+ol > li {
+  margin-bottom: 1.4rem;
+}
+.list-code,
+.list-code li {
+  margin: 0;
+}
+.list-code li {
+  list-style: none;
+}
+
+/* *QUERIES */
+@media (min-width: 1200px) {
+  header {
+    right: auto;
+    height: 100vh;
+    width: 22%;
+  }
+  main {
+    margin-top: 4rem;
+    margin-left: 27rem;
+  }
+
+  h1 {
+    text-align: left;
+    margin: 2rem;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem 0;
+    flex-direction: column;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .nav-link {
+    line-height: 6rem;
+  }
+
+  .footer {
+    position: absolute;
+    padding: 1rem;
+    bottom: 1rem;
+    color: var(--blue);
+    text-align: center;
+  }
+}
+
+@media (min-width: 1300px) {
+  main {
+    margin-left: 32rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    margin-left: 36rem;
+  }
+}
+
+@media (min-width: 1540px) {
+  main {
+    margin-left: 38rem;
+  }
+}
+
+@media (min-width: 1620px) {
+  main {
+    margin-left: 43rem;
+  }
+}
+
+@media (min-width: 1680px) {
+  main {
+    margin-left: 44rem;
+  }
+}
