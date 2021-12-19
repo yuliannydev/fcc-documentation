@@ -45,26 +45,25 @@ body {
   margin: 2rem;
 }
 
-header {
+#navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  width: 420px;
   background-color: var(--blue-light);
   border-bottom: 2px var(--blue) solid;
 }
-span {
-  display: none;
-}
 
-h1 {
+.title {
   text-align: center;
-  margin: 3.5rem 0 2rem;
+  margin: 5rem 1rem .5rem;
   font-size: 3.5rem;
   color: var(--blue);
 }
+
 ul {
-  margin: 2rem;
+  margin: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,18 +84,22 @@ ul li {
   line-height: 3.2rem;
 }
 
-main {
-  margin-top: 24rem;
+#main-doc {
+  margin-top: 4rem;
 }
+
 .main-section {
   text-align: justify;
   line-height: 3rem;
 }
 
+.main-section header, 
 .title-section {
   padding: 2.4rem 0;
   text-align: start;
   color: var(--blue);
+  font-weight: bold;
+  font-size: 2.6rem;
 }
 
 p {
@@ -110,6 +113,7 @@ ol li {
 ol > li {
   margin-bottom: 1.4rem;
 }
+
 .list-code,
 .list-code li {
   margin: 0;
@@ -118,16 +122,17 @@ ol > li {
   list-style: none;
 }
 
+
 /* *QUERIES */
 @media (min-width: 1200px) {
-  header {
+  nav {
     right: auto;
     height: 100vh;
     width: 22%;
   }
-  main {
+  #main-doc {
     margin-top: 4rem;
-    margin-left: 27rem;
+    margin-left: 43rem;
   }
 
   h1 {
@@ -149,42 +154,34 @@ ol > li {
   .nav-link {
     line-height: 6rem;
   }
-
-  .footer {
-    position: absolute;
-    padding: 1rem;
-    bottom: 1rem;
-    color: var(--blue);
-    text-align: center;
-  }
 }
 
 @media (min-width: 1300px) {
-  main {
+  #main-doc {
     margin-left: 32rem;
   }
 }
 
 @media (min-width: 1440px) {
-  main {
+  #main-doc {
     margin-left: 36rem;
   }
 }
 
 @media (min-width: 1540px) {
-  main {
+  #main-doc {
     margin-left: 38rem;
   }
 }
 
 @media (min-width: 1620px) {
-  main {
+  #main-doc {
     margin-left: 43rem;
   }
 }
 
-@media (min-width: 1680px) {
-  main {
+@media only screen and (min-width: 1680px) {
+  #main-doc {
     margin-left: 44rem;
   }
 }
